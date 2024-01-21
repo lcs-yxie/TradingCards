@@ -9,23 +9,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        ZStack{
-            
-            
+        
+
+            ZStack{
+                //First layer of background
                 Rectangle()
-                    .foregroundColor(.gray)
+                    .foregroundColor(.green)
+                
+                //Second layer of background
                 Rectangle()
-                .border(Color.white, width: 10)
-                    .foregroundColor(.black)
+                    .border(Color.white, width: 10)
+                    .foregroundColor(.blue)
                     .padding()
-                    
-                    
-          
+                Image("Lindan")
+                
+                    .resizable()
+                    .border(Color.white, width: 10)
+                    .padding(0.0)
+                    .frame(width: 310.0, height: 380.0)
+            }
+            .padding(.bottom, 300)
             
-                    
             
-            
-        }
+        
         
     }
 }

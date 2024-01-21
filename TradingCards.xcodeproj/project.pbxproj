@@ -12,6 +12,7 @@
 		640CF3BD2B5AB76100EAA201 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640CF3BC2B5AB76100EAA201 /* Assets.xcassets */; };
 		640CF3C02B5AB76100EAA201 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640CF3BF2B5AB76100EAA201 /* Preview Assets.xcassets */; };
 		640CF3C72B5AB9BB00EAA201 /* Structure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640CF3C62B5AB9BB00EAA201 /* Structure.swift */; };
+		640CF3C92B5ABF1900EAA201 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640CF3C82B5ABF1900EAA201 /* PlayerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		640CF3BC2B5AB76100EAA201 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		640CF3BF2B5AB76100EAA201 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		640CF3C62B5AB9BB00EAA201 /* Structure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structure.swift; sourceTree = "<group>"; };
+		640CF3C82B5ABF1900EAA201 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				640CF3B82B5AB76000EAA201 /* TradingCardsApp.swift */,
 				640CF3BA2B5AB76000EAA201 /* ContentView.swift */,
+				640CF3C82B5ABF1900EAA201 /* PlayerView.swift */,
 				640CF3C62B5AB9BB00EAA201 /* Structure.swift */,
 				640CF3BC2B5AB76100EAA201 /* Assets.xcassets */,
 				640CF3BE2B5AB76100EAA201 /* Preview Content */,
@@ -142,6 +145,7 @@
 			files = (
 				640CF3BB2B5AB76000EAA201 /* ContentView.swift in Sources */,
 				640CF3B92B5AB76000EAA201 /* TradingCardsApp.swift in Sources */,
+				640CF3C92B5ABF1900EAA201 /* PlayerView.swift in Sources */,
 				640CF3C72B5AB9BB00EAA201 /* Structure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
