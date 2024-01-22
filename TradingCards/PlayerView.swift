@@ -16,52 +16,58 @@ struct PlayerView: View {
     
     var body: some View {
         
-
+        NavigationView{
+            
             ZStack{
                 //First layer of background
-                Rectangle()
-                    .foregroundColor(.green)
+                RoundedRectangle(cornerRadius: 20)
+                    .foregroundColor(.black)
+                
                 
                 //Second layer of background
-                Rectangle()
-                    .border(Color.white, width: 10)
-                    .foregroundColor(.blue)
+                
+                RoundedRectangle(cornerRadius: 20)
+                    .foregroundColor(.white)
                     .padding()
+                
+                RoundedRectangle(cornerRadius: 20)
+                    
+                    .foregroundColor(.red)
+                    .padding()
+                    .padding(10)
                 Image(playerImage)
                     .resizable()
-                    .border(Color.white, width: 10)
+                    .clipShape(RoundedRectangle(cornerRadius: 20))
                     .padding(0.0)
                     .frame(width: 310.0, height: 380.0)
                 
-                HStack (spacing: 100){
-                    VStack {
-                        Spacer()
-                        
-                        Text(playerName)
-                            .font(.system(size: 41))
-                            .bold()
-                            .background(Color.green)
-                          
-                        
-                    }
+                
+                HStack {
                     
-                    VStack (alignment: .trailing) {
+                    Spacer()
+                    
+                    VStack {
                         Spacer()
                         //Country image
                         Image(countryImage)
                             .resizable()
-                            .border(Color.black, width: 2)
+                            .clipShape(RoundedRectangle(cornerRadius: 20))
                             .frame(width: 120, height: 80)
                             .padding()
+                        
                         
                         
                     }
                 }
                 
             }
-            .padding(.bottom, 300)
+            .padding(.bottom, 200)
+            .navigationTitle(playerName)
             
             
+        }
+        
+        
         
         
     }
