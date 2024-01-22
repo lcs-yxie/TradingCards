@@ -29,7 +29,7 @@ struct TitleView: View {
                     .clipped()
                     .frame(width: 50.0, height: 50.0)
                     .clipShape(Circle())
-                    .padding()
+                    .padding(.leading)
                 
             VStack (alignment: .leading){
                 Text(playerName)
@@ -39,6 +39,7 @@ struct TitleView: View {
             .font(.system(size: 14))
            
             Spacer()
+            
             
             
         }
@@ -54,6 +55,10 @@ struct TitleView: View {
     }
 }
 
+
+let tao = TitleView(playerImage: "Tao", playerName: "Taufik Hidayat", comment: "'The King of Backhand.'")
+let Lee = TitleView(playerImage: "Lee", playerName: "Lee Chong Wei", comment: "'The Uncrowned King.'")
+
 #Preview {
-    TitleView(playerImage: "Tao", playerName: "Taufik Hidayat", comment: "'The King of Backhand.'")
+    tao
 }

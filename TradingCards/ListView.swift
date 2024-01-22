@@ -17,10 +17,18 @@ struct ContentView: View {
                 
                 
                 //First Item
-//                NavigationLink(destination: {
-//                    LinDan
-//                }, label: <#T##() -> _#>)
+                NavigationLink(destination: {
+                    LeeChongWei
+                }, label: {
+                    Lee
+                })
                 
+                //Second Item
+                NavigationLink(destination: {
+                    LeeChongWei
+                }, label: {
+                    Lee
+                })
                 
             }
             
