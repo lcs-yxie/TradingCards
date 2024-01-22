@@ -7,11 +7,15 @@
 
 import SwiftUI
 
-struct PlayerView: View {
+struct Player: View {
+    
+    
     
     let playerImage: String
     let playerName: String
     let countryImage: String
+    let color1: Color
+    let color2: Color
     
     
     var body: some View {
@@ -21,7 +25,7 @@ struct PlayerView: View {
             ZStack{
                 //First layer of background
                 RoundedRectangle(cornerRadius: 20)
-                    .foregroundColor(.black)
+                    .foregroundColor(color1)
                 
                 
                 //Second layer of background
@@ -32,14 +36,17 @@ struct PlayerView: View {
                 
                 RoundedRectangle(cornerRadius: 20)
                     
-                    .foregroundColor(.red)
+                    .foregroundColor(color2)
                     .padding()
                     .padding(10)
                 Image(playerImage)
                     .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .clipped()
+                    .frame(width: 310.0, height: 380.0)
                     .clipShape(RoundedRectangle(cornerRadius: 20))
                     .padding(0.0)
-                    .frame(width: 310.0, height: 380.0)
+                    
                 
                 
                 HStack {
@@ -73,6 +80,15 @@ struct PlayerView: View {
     }
 }
 
+let LeeChongWei = Player(playerImage: "Lee", playerName: "Lee Chong Wei", countryImage: "Malaysia", color1: .blue, color2: .yellow)
+
+let LinDan = Player(playerImage: "Lindan", playerName: "Lin Dan", countryImage: "China", color1: .black, color2: .red)
+
+let Tao = Player(playerImage: "Tao", playerName: "Taufik Hidayat", countryImage: "Indonesia", color1: .black, color2: .red)
+
+
+
 #Preview {
-    PlayerView(playerImage: "Lindan", playerName: "Lin Dan", countryImage: "China")
+    LeeChongWei
 }
+
