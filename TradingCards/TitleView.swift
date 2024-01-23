@@ -58,6 +58,7 @@ struct TitleView: View {
 
 let tao = TitleView(playerImage: "Tao", playerName: "Taufik Hidayat", comment: "'The King of Backhand.'")
 let Lee = TitleView(playerImage: "Lee", playerName: "Lee Chong Wei", comment: "'The Uncrowned King.'")
+let Lin = TitleView(playerImage: "Lindan", playerName: "Lin Dan", comment: "'GOAT of badminton'")
 
 #Preview {
     tao

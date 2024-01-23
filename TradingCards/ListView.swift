@@ -13,21 +13,30 @@ struct ContentView: View {
         
 
         NavigationStack{
+            
+            
             List{
                 
                 
                 //First Item
                 NavigationLink(destination: {
-                    LeeChongWei
+                        LeeChongWei
                 }, label: {
                     Lee
                 })
                 
                 //Second Item
                 NavigationLink(destination: {
-                    LeeChongWei
+                    Tao
                 }, label: {
-                    Lee
+                    tao
+                })
+                
+                //Thrid item
+                NavigationLink(destination: {
+                    LinDan
+                }, label: {
+                    Lin
                 })
                 
             }
