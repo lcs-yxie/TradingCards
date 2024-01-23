@@ -24,6 +24,8 @@ struct BadmintonPlayer: View{
         
         
         VStack{
+            
+            
             //first line of texts
             HStack{
                 Spacer()
@@ -69,17 +71,31 @@ struct BadmintonPlayer: View{
             }
             
             //Percentage
-            Text("Win to Loss Percentage")
+            Text("Win to Loss Percentage:")
+                .font(Font.custom("Copperplate-Bold", size: 24))
+            
             Text("\(winningPercent)%")
                 .font(Font.custom("Copperplate-Bold", size: 84))
             
+            Text("Famous Play:")
+                .font(Font.custom("Copperplate-Bold", size: 24))
+            Text(famousPlay)
+            
+                
+            Text("Honor")
+                .font(Font.custom("Copperplate-Bold", size: 24))
+                .padding(.top)
+            Text(honor)
+                .padding(.trailing)
+                .padding(.leading)
             
         }
         .font(Font.custom("Didot-Bold", size: 16))
-        
+       
         
         
     }
+        
     
     
     
@@ -100,9 +116,7 @@ let linDanInfo = BadmintonPlayer(
 
 
 #Preview{
-    
-    
-    
+
     linDanInfo
 }
 

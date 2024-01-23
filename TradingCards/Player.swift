@@ -70,7 +70,7 @@ struct Player: View {
                     }
                     
                 }
-                .padding(.bottom, 150)
+                .padding(.bottom, 180)
                 .navigationTitle(playerName)
                 
 
@@ -89,7 +89,12 @@ let LeeChongWei = VStack{
     Player(playerImage: "Lee", playerName: "Lee Chong Wei", countryImage: "Malaysia", color1: .blue, color2: .yellow)
 }
 
-let LinDan = Player(playerImage: "Lindan", playerName: "Lin Dan", countryImage: "China", color1: .black, color2: .red)
+let LinDan = ScrollView{
+    
+    Player(playerImage: "Lindan", playerName: "Lin Dan", countryImage: "China", color1: .black, color2: .red)
+        
+    linDanInfo
+}
 
 let Tao = Player(playerImage: "Tao", playerName: "Taufik Hidayat", countryImage: "Indonesia", color1: .black, color2: .red)
 
