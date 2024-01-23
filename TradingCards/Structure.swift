@@ -8,7 +8,7 @@
 import SwiftUI
 
 
-struct BadmintonPlayer {
+struct BadmintonPlayer: View{
     
         let name: String
         var age: Int
@@ -22,18 +22,62 @@ struct BadmintonPlayer {
     
     var body: some View {
         
-        HStack{
-            Text("Name")
-            Text(name)
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+        
+        VStack{
+            //first line of texts
+            HStack{
+                Spacer()
+                Text("Name:")
+                    .bold()
+                Text(name)
+                
+                Spacer()
+                
+                Text("Country:")
+                    .bold()
+                Text(country)
+                Spacer()
+            }
             
-            Spacer()
+            //Second line of text
+            HStack{
+                Spacer()
+                //Second Line
+                Text("Age:")
+                    .bold()
+                Text("\(age)")
+                Spacer()
+                Text("Ranking")
+                    .bold()
+                Text("\(ranking)")
+                Spacer()
+            }
             
-            Text("Country")
-            Text(country)
-                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            //Thrid line of text
+            HStack{
+                Spacer()
+                //Second Line
+                Text("Wins:")
+                    .bold()
+                Text("\(wins)")
+                Spacer()
+                Text("Losses:")
+                    .bold()
+                Text("\(losses)")
+                Spacer()
+                
+            }
+            
+            //Percentage
+            Text("Win to Loss Percentage")
+            Text("\(winningPercent)%")
+                .font(Font.custom("Copperplate-Bold", size: 84))
+            
             
         }
+        .font(Font.custom("Didot-Bold", size: 16))
+        
+        
         
     }
     
@@ -41,7 +85,6 @@ struct BadmintonPlayer {
     
     
 }
-
 
 let linDanInfo = BadmintonPlayer(
                             name: "Lin Dan",
@@ -53,3 +96,13 @@ let linDanInfo = BadmintonPlayer(
                             losses: 131, // Example number of losses
                             famousPlay: "Diagonal Jump Smash",
                             winningPercent: 83)
+
+
+
+#Preview{
+    
+    
+    
+    linDanInfo
+}
+
