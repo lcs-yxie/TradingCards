@@ -20,14 +20,14 @@ struct ContentView: View {
                 
                 //First Item
                 NavigationLink(destination: {
-//                        LeeChongWei
+                    LeeChongWei
                 }, label: {
                     Lee
                 })
                 
                 //Second Item
                 NavigationLink(destination: {
-//                    Tao
+                    Tao
                 }, label: {
                     tao
                 })
@@ -37,6 +37,20 @@ struct ContentView: View {
                     LinDan
                 }, label: {
                     Lin
+                })
+                
+                //Fourth item
+                NavigationLink(destination: {
+                    Peter
+                }, label: {
+                    peter
+                })
+                
+                //Fourth item
+                NavigationLink(destination: {
+                    Victor
+                }, label: {
+                    viktor
                 })
                 
             }
