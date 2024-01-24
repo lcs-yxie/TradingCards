@@ -59,8 +59,8 @@ struct TitleView: View {
 let tao = TitleView(playerImage: "Tao", playerName: "Taufik Hidayat", comment: "'Mr. Backhand.'")
 let Lee = TitleView(playerImage: "Lee", playerName: "Lee Chong Wei", comment: "'The Uncrowned King.'")
 let Lin = TitleView(playerImage: "Lindan", playerName: "Lin Dan", comment: "'GOAT of Badminton'")
-let peter = TitleView(playerImage: "Peter", playerName: "Peter Gade", comment: "Net Master")
-let viktor = TitleView(playerImage: "Victor", playerName: "Viktor Axelson", comment: "The Undefeated All-rounder")
+let peter = TitleView(playerImage: "Peter", playerName: "Peter Gade", comment: "'Net Master'")
+let viktor = TitleView(playerImage: "Victor", playerName: "Viktor Axelson", comment: "'The Undefeated All-rounder'")
 
 #Preview {
     tao

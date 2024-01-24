@@ -9,57 +9,62 @@ import SwiftUI
 
 
 struct ContentView: View {
+    
     var body: some View {
         
 
         NavigationStack{
             
-            
-            List{
+            VStack{
                 
+                Text("The GOATS")
+                    .bold()
                 
-                //First Item
-                NavigationLink(destination: {
-                    LeeChongWei
-                }, label: {
-                    Lee
-                })
-                
-                //Second Item
-                NavigationLink(destination: {
-                    Tao
-                }, label: {
-                    tao
-                })
-                
-                //Thrid item
-                NavigationLink(destination: {
-                    LinDan
-                }, label: {
-                    Lin
-                })
-                
-                //Fourth item
-                NavigationLink(destination: {
-                    Peter
-                }, label: {
-                    peter
-                })
-                
-                //Fourth item
-                NavigationLink(destination: {
-                    Victor
-                }, label: {
-                    viktor
-                })
+                List{
+                    
+                    
+                    //First Item
+                    NavigationLink(destination: {
+                        LeeChongWei
+                    }, label: {
+                        Lee
+                    })
+                    
+                    //Second Item
+                    NavigationLink(destination: {
+                        Tao
+                    }, label: {
+                        tao
+                    })
+                    
+                    //Thrid item
+                    NavigationLink(destination: {
+                        LinDan
+                    }, label: {
+                        Lin
+                    })
+                    
+                    //Fourth item
+                    NavigationLink(destination: {
+                        Peter
+                    }, label: {
+                        peter
+                    })
+                    
+                    //Fifth item
+                    NavigationLink(destination: {
+                        Victor
+                    }, label: {
+                        viktor
+                    })
+                    
+                }
                 
             }
-            
-            
-            
-            
+           
         }
-            
+        
+        
             
         
         
