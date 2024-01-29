@@ -8,12 +8,12 @@ import SwiftUI
 
 struct GalleryItemView: View {
     
-    let item: Players
+    let Item: Players
     
     var body: some View {
         
         VStack(spacing: 0) {
-            Image(item.playerImage)
+            Image(Item.playerImage)
                 .resizable()
                 .scaledToFill()
                 .frame(height: 125)
@@ -22,7 +22,7 @@ struct GalleryItemView: View {
                 )
                 .padding(.bottom, 10)
 
-            Text(item.playerName)
+            Text(Item.playerName)
                 .font(.headline)
                 .multilineTextAlignment(.center)
 
@@ -36,9 +36,9 @@ struct GalleryItemView: View {
 
 #Preview {
     HStack {
-        GalleryItemView(item: LeeChongWei)
+        GalleryItemView(Item: LeeChongWei)
             
-        GalleryItemView(item: LinDan)
+        GalleryItemView(Item: LinDan)
             
 
     }

@@ -14,6 +14,7 @@ struct GalleryView: View {
         GridItem(.adaptive(minimum: 100, maximum: 200), alignment: .top),
         GridItem(.adaptive(minimum: 100, maximum: 200), alignment: .top),
     ]
+    
     // MARK: Computed properties
     var body: some View {
         
@@ -26,7 +27,7 @@ struct GalleryView: View {
                         NavigationLink {
                             DetailView(Item: currentPlayers)
                         } label: {
-                            GalleryItemView(item: currentPlayers)
+                            GalleryItemView(Item: currentPlayers)
                         }
                         .tint(.primary)
                     }
