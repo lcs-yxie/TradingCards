@@ -13,6 +13,8 @@
 		640CF3C02B5AB76100EAA201 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 640CF3BF2B5AB76100EAA201 /* Preview Assets.xcassets */; };
 		640F09F32B5ED3F2009A75F4 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640F09F22B5ED3F2009A75F4 /* DetailView.swift */; };
 		640F09F52B5EDACE009A75F4 /* TitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 640F09F42B5EDACE009A75F4 /* TitleView.swift */; };
+		64B8F5C32B680C2400BAD779 /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8F5C22B680C2400BAD779 /* GalleryView.swift */; };
+		64B8F5C52B680D6100BAD779 /* GalleryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B8F5C42B680D6100BAD779 /* GalleryItemView.swift */; };
 		64BC15A62B64028A00A41D70 /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64BC15A52B64028A00A41D70 /* Players.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +26,8 @@
 		640CF3BF2B5AB76100EAA201 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		640F09F22B5ED3F2009A75F4 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		640F09F42B5EDACE009A75F4 /* TitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleView.swift; sourceTree = "<group>"; };
+		64B8F5C22B680C2400BAD779 /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
+		64B8F5C42B680D6100BAD779 /* GalleryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryItemView.swift; sourceTree = "<group>"; };
 		64BC15A52B64028A00A41D70 /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,8 @@
 				640F09F22B5ED3F2009A75F4 /* DetailView.swift */,
 				640CF3BA2B5AB76000EAA201 /* ListView.swift */,
 				640F09F42B5EDACE009A75F4 /* TitleView.swift */,
+				64B8F5C22B680C2400BAD779 /* GalleryView.swift */,
+				64B8F5C42B680D6100BAD779 /* GalleryItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -164,7 +170,9 @@
 			files = (
 				640F09F32B5ED3F2009A75F4 /* DetailView.swift in Sources */,
 				640CF3BB2B5AB76000EAA201 /* ListView.swift in Sources */,
+				64B8F5C52B680D6100BAD779 /* GalleryItemView.swift in Sources */,
 				640CF3B92B5AB76000EAA201 /* TradingCardsApp.swift in Sources */,
+				64B8F5C32B680C2400BAD779 /* GalleryView.swift in Sources */,
 				64BC15A62B64028A00A41D70 /* Players.swift in Sources */,
 				640F09F52B5EDACE009A75F4 /* TitleView.swift in Sources */,
 			);

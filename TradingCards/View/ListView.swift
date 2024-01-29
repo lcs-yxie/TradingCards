@@ -19,7 +19,7 @@ struct ListView: View {
                 NavigationLink {
                     DetailView(Item: Players)
                 } label: {
-                    Text(Players.name)
+                    TitleView(Item: Players)
                 }
                 
             }

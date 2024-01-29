@@ -10,11 +10,9 @@ import SwiftUI
 
 struct TitleView: View {
     
+    let Item: Players
     
     
-    let playerImage: String
-    let playerName: String
-    let comment: String
 
     
     var body: some View {
@@ -23,7 +21,7 @@ struct TitleView: View {
             
             
             
-                Image(playerImage)
+            Image(Item.playerImage)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .clipped()
@@ -31,11 +29,11 @@ struct TitleView: View {
                     .clipShape(Circle())
                     .padding(.leading)
                 
-            VStack (alignment: .leading){
-                Text(playerName)
+            
+                Text(Item.playerName)
                     .bold()
-                Text(comment)
-            }
+                
+            
             .font(.system(size: 14))
            
             Spacer()
@@ -56,12 +54,7 @@ struct TitleView: View {
 }
 
 
-let tao = TitleView(playerImage: "Tao", playerName: "Taufik Hidayat", comment: "'Mr. Backhand.'")
-let Lee = TitleView(playerImage: "Lee", playerName: "Lee Chong Wei", comment: "'The Uncrowned King.'")
-let Lin = TitleView(playerImage: "Lindan", playerName: "Lin Dan", comment: "'GOAT of Badminton'")
-let peter = TitleView(playerImage: "Peter", playerName: "Peter Gade", comment: "'Net Master'")
-let viktor = TitleView(playerImage: "Victor", playerName: "Viktor Axelson", comment: "'The Undefeated All-rounder'")
 
 #Preview {
-    tao
+    TitleView(Item: LeeChongWei)
 }
